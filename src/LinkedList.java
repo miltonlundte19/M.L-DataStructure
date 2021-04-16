@@ -21,7 +21,9 @@ public class LinkedList {
      * @param newNode
      */
     public void addLast(Node newNode) {
+        if (first == null) {
 
+        }
     }
 
     /**
