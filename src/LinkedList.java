@@ -22,7 +22,14 @@ public class LinkedList {
      */
     public void addLast(Node newNode) {
         if (first == null) {
-
+            newNode.next = null;
+            first = newNode;
+        } else {
+            Node h = first;
+            while (h.getNext() != null) {
+                h = h.getNext();
+            }
+            h.next = newNode;
         }
     }
 
@@ -42,7 +49,8 @@ public class LinkedList {
      * @return
      */
     public int size() {
-        return 0;
+
+        return size();
     }
 
     /**
